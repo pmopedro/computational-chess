@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <p><strong>Input FEN:</strong> {{ fen }}</p>
+    <p><strong>Score:</strong> {{ score }}</p>
+    <p><strong>Move:</strong> {{ best_move }}</p>
+    <!-- Display the board SVG -->
+    <div>
+        <h2>Board Position</h2>
+        {{ board_svg | safe }}
+    </div>
+    <a href="/">Back to Input</a>
+</body>
+</html>
